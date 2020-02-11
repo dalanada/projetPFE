@@ -43,7 +43,7 @@ public class cllient_adabter  extends RecyclerView.Adapter<cllient_adabter.ViewH
         holder.all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context,update.class);
+                Intent i = new Intent(context,select.class);
                 i.putExtra("client",  client);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(i);
